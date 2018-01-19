@@ -50,7 +50,7 @@ function updateDomain() {
 
 # lets run it!
 function main() {
-  EXTERNAL_IP=$(curl -s https://api.ipify.org)
+  EXTERNAL_IP=$(dig TXT +short o-o.myaddr.l.google.com @ns1.google.com| awk -F'"' '{ print $2}')
 
   if [[ ${EXTERNAL_IP} ]] && \
    [[ ${CF_EMAIL} ]] && \
