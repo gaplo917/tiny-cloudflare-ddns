@@ -28,6 +28,7 @@ RUN \
   apk add --no-cache \
     curl \
     jq \
-    openssl
+    openssl \
+    bind-tools
 
 ENTRYPOINT ["/entrypoint.sh"]
