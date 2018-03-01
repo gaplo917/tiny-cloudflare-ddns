@@ -67,7 +67,6 @@ function main() {
       [[ -z ${CF_API_KEY} ]] && echo "  - CF_API_KEY"
       [[ -z ${CF_ZONE_NAME} ]] && echo "  - CF_ZONE_NAME"
       [[ -z ${CF_DOMAIN_NAME} ]] && echo "  - CF_DOMAIN_NAME"
-    exit 1  
   fi
 }
 
